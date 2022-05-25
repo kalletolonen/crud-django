@@ -21,7 +21,13 @@ class RvDeleteView(DeleteView):
 	model = models.Rv
 	success_url = "/"
 
+class RentListView(ListView): 
+	model = models.Rent 
 
+class RentCreateView(CreateView): 
+	model = models.Rent 
+	fields = "__all__"
+	success_url = "/"
 
 
 	

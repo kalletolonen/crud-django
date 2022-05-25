@@ -9,4 +9,6 @@ urlpatterns = [
     path('rv/<int:pk>/update', views.RvUpdateView.as_view()),
     path('new/', views.RvCreateView.as_view()),
     path('rv/<int:pk>/delete', views.RvDeleteView.as_view()),
+    path('rent/', views.RentListView.as_view()),
+    path('rent/new/', views.RentCreateView.as_view()),
 ]

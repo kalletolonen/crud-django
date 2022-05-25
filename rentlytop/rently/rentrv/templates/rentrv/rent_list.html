@@ -1,0 +1,13 @@
+<h1>Rent list</h1>
+
+{% for rent in  object_list %}
+	<p>
+		<a href="{{ rent.get_absolute_url }}">{{ rent.renter }}</a> <br>
+		{{ rent.rv}}<br>
+		<a href="{{ rv.get_absolute_url }}/update">Update</a> - 
+		<a href="{{ rv.get_absolute_url }}/delete">Delete</a>
+	</p>
+{% endfor %}
+
+<a href="new/">New</a>
+<a href="/">Back to RV-list</a>

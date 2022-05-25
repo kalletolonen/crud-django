@@ -1,4 +1,4 @@
-This is a simple CRUD example for Django. 
+This is a simple CRUD example for Django. 3 tables and a foreign key.
 
 Code from the lectures of:
 https://www.terokarvinen.com
