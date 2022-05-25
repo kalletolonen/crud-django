@@ -1,0 +1,12 @@
+<h1>Rv list</h1>
+
+{% for rv in  object_list %}
+	<p>
+		<a href="{{ rv.get_absolute_url }}">{{ rv.name }}</a> <br>
+		{{ rv.manufacturer}}<br>
+		<a href="{{ rv.get_absolute_url }}/update">Update</a> - 
+		<a href="{{ rv.get_absolute_url }}/delete">Delete</a>
+	</p>
+{% endfor %}
+
+<a href="/new">New</a>
